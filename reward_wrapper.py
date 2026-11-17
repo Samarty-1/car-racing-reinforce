@@ -5,7 +5,7 @@ everywhere in the pipeline (matches FRAME_SKIP used in phase 1 training/eval).
 
 The bonus only applies when the car genuinely completes the whole track (all
 tiles visited) -- not on a crash or a timeout. Finishing faster than "par"
-(set from how long the bot took on average during its passing test) earns
+(a fixed number of decisions, see train_phase2.py) earns
 extra points; finishing slower loses a few. Crashing/not finishing is
 untouched -- this only fine-tunes behavior AFTER it already knows how to
 finish, nudging it toward doing so more efficiently.
@@ -39,9 +39,10 @@ class CarRacingSpeedBonus(gym.Wrapper):
         self.decision_count += 1
 
         if terminated:
-            core = self.env.unwrapped
-            crashed = core.tile_visited_count < len(core.track)
-            if not crashed:
+            # The env ends a lap once 95% of tiles are visited and the car is
+            # back at the start, so "all tiles visited" would miss real laps.
+            # It reports which terminal condition fired; use that.
+            if info.get("lap_finished"):
                 diff = self.par_decisions - self.decision_count
                 bonus = max(-MAX_BONUS_MAGNITUDE, min(MAX_BONUS_MAGNITUDE, diff * BONUS_PER_DECISION))
                 total_reward += bonus

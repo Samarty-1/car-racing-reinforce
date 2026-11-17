@@ -1,0 +1,823 @@
+{
+  "checkpoint": "checkpoint_gpu.pt",
+  "mode": "greedy",
+  "first_seed": 0,
+  "frame_skip": 4,
+  "summary": {
+    "episodes": 100,
+    "mean": 666.3160147127362,
+    "std": 186.41108086173162,
+    "ci95_low": 629.7794428638368,
+    "ci95_high": 702.8525865616356,
+    "median": 718.6500109576878,
+    "min": 247.30538922154548,
+    "max": 912.299999999987,
+    "frac_score_900_plus": 0.02,
+    "laps_finished": 2,
+    "hit_time_limit": 96,
+    "left_playfield": 2,
+    "mean_tiles_visited_frac": 0.7681520147127506
+  },
+  "per_episode": [
+    {
+      "seed": 0,
+      "score": 436.05015673979887,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.5360501567398119
+    },
+    {
+      "seed": 1,
+      "score": 856.3636363636191,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9563636363636364
+    },
+    {
+      "seed": 2,
+      "score": 762.6865671641659,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.8626865671641791
+    },
+    {
+      "seed": 3,
+      "score": 866.7896678966672,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.966789667896679
+    },
+    {
+      "seed": 4,
+      "score": 474.54545454543836,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.5745454545454546
+    },
+    {
+      "seed": 5,
+      "score": 365.04559270515375,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.46504559270516715
+    },
+    {
+      "seed": 6,
+      "score": 871.8309859154753,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.971830985915493
+    },
+    {
+      "seed": 7,
+      "score": 602.1943573667564,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.7021943573667712
+    },
+    {
+      "seed": 8,
+      "score": 816.3346613545696,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9163346613545816
+    },
+    {
+      "seed": 9,
+      "score": 478.9473684210361,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.5789473684210527
+    },
+    {
+      "seed": 10,
+      "score": 840.1993355481624,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9401993355481728
+    },
+    {
+      "seed": 11,
+      "score": 726.2548262548087,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.8262548262548263
+    },
+    {
+      "seed": 12,
+      "score": 424.75247524751165,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.5247524752475248
+    },
+    {
+      "seed": 13,
+      "score": 885.7651245551466,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9857651245551602
+    },
+    {
+      "seed": 14,
+      "score": 866.1016949152392,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9661016949152542
+    },
+    {
+      "seed": 15,
+      "score": 850.819672131134,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9508196721311475
+    },
+    {
+      "seed": 16,
+      "score": 652.5773195876142,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.7525773195876289
+    },
+    {
+      "seed": 17,
+      "score": 468.10631229234326,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.5681063122923588
+    },
+    {
+      "seed": 18,
+      "score": 363.2587859424783,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.46325878594249204
+    },
+    {
+      "seed": 19,
+      "score": 722.8571428571302,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.8228571428571428
+    },
+    {
+      "seed": 20,
+      "score": 714.1025641025506,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.8141025641025641
+    },
+    {
+      "seed": 21,
+      "score": 722.4852071005773,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.8224852071005917
+    },
+    {
+      "seed": 22,
+      "score": 529.969418960232,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.6299694189602446
+    },
+    {
+      "seed": 23,
+      "score": 335.81081081079657,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.4358108108108108
+    },
+    {
+      "seed": 24,
+      "score": 824.8366013071699,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9248366013071896
+    },
+    {
+      "seed": 25,
+      "score": 609.1503267973701,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.7091503267973857
+    },
+    {
+      "seed": 26,
+      "score": 861.5384615384438,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9615384615384616
+    },
+    {
+      "seed": 27,
+      "score": 812.3376623376447,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9123376623376623
+    },
+    {
+      "seed": 28,
+      "score": 807.8947368420894,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9078947368421053
+    },
+    {
+      "seed": 29,
+      "score": 559.7938144329764,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.6597938144329897
+    },
+    {
+      "seed": 30,
+      "score": 800.9584664536612,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9009584664536742
+    },
+    {
+      "seed": 31,
+      "score": 436.49635036495044,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.5364963503649635
+    },
+    {
+      "seed": 32,
+      "score": 544.0677966101551,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.6440677966101694
+    },
+    {
+      "seed": 33,
+      "score": 546.6431095406225,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.6466431095406361
+    },
+    {
+      "seed": 34,
+      "score": 564.5962732919099,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.6645962732919255
+    },
+    {
+      "seed": 35,
+      "score": 630.6397306397141,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.7306397306397306
+    },
+    {
+      "seed": 36,
+      "score": 844.8275862068795,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9448275862068966
+    },
+    {
+      "seed": 37,
+      "score": 372.5274725274585,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.4725274725274725
+    },
+    {
+      "seed": 38,
+      "score": 863.4551495016507,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9634551495016611
+    },
+    {
+      "seed": 39,
+      "score": 872.8915662650492,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9728915662650602
+    },
+    {
+      "seed": 40,
+      "score": 247.30538922154548,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.3473053892215569
+    },
+    {
+      "seed": 41,
+      "score": 841.1764705882155,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9411764705882353
+    },
+    {
+      "seed": 42,
+      "score": 786.9257950529881,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.8869257950530035
+    },
+    {
+      "seed": 43,
+      "score": 418.15181518150496,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.5181518151815182
+    },
+    {
+      "seed": 44,
+      "score": 453.00859598852657,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.5530085959885387
+    },
+    {
+      "seed": 45,
+      "score": 734.3949044585802,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.8343949044585988
+    },
+    {
+      "seed": 46,
+      "score": 775.8169934640337,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.8758169934640523
+    },
+    {
+      "seed": 47,
+      "score": 326.6211604095421,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.42662116040955633
+    },
+    {
+      "seed": 48,
+      "score": 834.3065693430478,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9343065693430657
+    },
+    {
+      "seed": 49,
+      "score": 612.5382262996795,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.7125382262996942
+    },
+    {
+      "seed": 50,
+      "score": 528.8659793814292,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.6288659793814433
+    },
+    {
+      "seed": 51,
+      "score": 529.6296296296136,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.6296296296296297
+    },
+    {
+      "seed": 52,
+      "score": 676.6666666666526,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.7766666666666666
+    },
+    {
+      "seed": 53,
+      "score": 832.1428571428397,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9321428571428572
+    },
+    {
+      "seed": 54,
+      "score": 443.91891891890504,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.543918918918919
+    },
+    {
+      "seed": 55,
+      "score": 912.299999999987,
+      "frames": 877,
+      "decisions": 220,
+      "outcome": "lap_finished",
+      "tiles_visited_frac": 1.0
+    },
+    {
+      "seed": 56,
+      "score": 495.0155763239745,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.5950155763239875
+    },
+    {
+      "seed": 57,
+      "score": 565.5172413792943,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.6655172413793103
+    },
+    {
+      "seed": 58,
+      "score": 401.7182130584057,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.5017182130584192
+    },
+    {
+      "seed": 59,
+      "score": 555.2901023890614,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.6552901023890785
+    },
+    {
+      "seed": 60,
+      "score": 440.9836065573632,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.5409836065573771
+    },
+    {
+      "seed": 61,
+      "score": 893.5483870967644,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9935483870967742
+    },
+    {
+      "seed": 62,
+      "score": 856.2043795620264,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9562043795620438
+    },
+    {
+      "seed": 63,
+      "score": 550.5576208178287,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.6505576208178439
+    },
+    {
+      "seed": 64,
+      "score": 750.6779359430473,
+      "frames": 996,
+      "decisions": 249,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.9501779359430605
+    },
+    {
+      "seed": 65,
+      "score": 892.7797833934928,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9927797833935018
+    },
+    {
+      "seed": 66,
+      "score": 896.4412811387759,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.99644128113879
+    },
+    {
+      "seed": 67,
+      "score": 839.1025641025494,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9391025641025641
+    },
+    {
+      "seed": 68,
+      "score": 380.7692307692181,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.4807692307692308
+    },
+    {
+      "seed": 69,
+      "score": 714.8148148147983,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.8148148148148148
+    },
+    {
+      "seed": 70,
+      "score": 875.2066115702362,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9752066115702479
+    },
+    {
+      "seed": 71,
+      "score": 421.1726384364687,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.5211726384364821
+    },
+    {
+      "seed": 72,
+      "score": 786.0630824372619,
+      "frames": 997,
+      "decisions": 250,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.985663082437276
+    },
+    {
+      "seed": 73,
+      "score": 600.3745318351918,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.700374531835206
+    },
+    {
+      "seed": 74,
+      "score": 903.1999999999806,
+      "frames": 968,
+      "decisions": 242,
+      "outcome": "lap_finished",
+      "tiles_visited_frac": 1.0
+    },
+    {
+      "seed": 75,
+      "score": 789.2617449664261,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.889261744966443
+    },
+    {
+      "seed": 76,
+      "score": 811.6607773851435,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.911660777385159
+    },
+    {
+      "seed": 77,
+      "score": 552.6315789473523,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.6526315789473685
+    },
+    {
+      "seed": 78,
+      "score": 850.3105590061955,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9503105590062112
+    },
+    {
+      "seed": 79,
+      "score": 817.5257731958592,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9175257731958762
+    },
+    {
+      "seed": 80,
+      "score": 729.1814946619075,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.8291814946619217
+    },
+    {
+      "seed": 81,
+      "score": 889.1696750902435,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9891696750902527
+    },
+    {
+      "seed": 82,
+      "score": 452.529182879363,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.5525291828793775
+    },
+    {
+      "seed": 83,
+      "score": 732.7272727272567,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.8327272727272728
+    },
+    {
+      "seed": 84,
+      "score": 312.37113402060413,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.41237113402061853
+    },
+    {
+      "seed": 85,
+      "score": 634.082397003732,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.7340823970037453
+    },
+    {
+      "seed": 86,
+      "score": 856.5217391304232,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9565217391304348
+    },
+    {
+      "seed": 87,
+      "score": 569.1449814126242,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.6691449814126395
+    },
+    {
+      "seed": 88,
+      "score": 398.1412639405055,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.49814126394052044
+    },
+    {
+      "seed": 89,
+      "score": 890.0662251655533,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9900662251655629
+    },
+    {
+      "seed": 90,
+      "score": 295.27027027025616,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.3952702702702703
+    },
+    {
+      "seed": 91,
+      "score": 504.81099656355957,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.6048109965635738
+    },
+    {
+      "seed": 92,
+      "score": 796.1937716262864,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.8961937716262975
+    },
+    {
+      "seed": 93,
+      "score": 817.7215189873311,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9177215189873418
+    },
+    {
+      "seed": 94,
+      "score": 851.1278195488541,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9511278195488722
+    },
+    {
+      "seed": 95,
+      "score": 833.1103678929586,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9331103678929766
+    },
+    {
+      "seed": 96,
+      "score": 706.3380281689981,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.8063380281690141
+    },
+    {
+      "seed": 97,
+      "score": 609.6774193548275,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.7096774193548387
+    },
+    {
+      "seed": 98,
+      "score": 860.9929078014051,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.9609929078014184
+    },
+    {
+      "seed": 99,
+      "score": 711.3207547169671,
+      "frames": 1000,
+      "decisions": 250,
+      "outcome": "time_limit",
+      "tiles_visited_frac": 0.8113207547169812
+    }
+  ]
+}

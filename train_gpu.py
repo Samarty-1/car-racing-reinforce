@@ -88,6 +88,22 @@ def compute_returns(rewards, gamma):
     return returns
 
 
+def normalise_returns(returns, masks):
+    """Standardise returns using only the steps that were actually played.
+
+    Steps after an episode has ended are padding (mask 0, return 0). Including
+    them in the mean and standard deviation would drag the baseline towards
+    zero whenever a car finishes or leaves the track early, so they are left
+    out of the statistics and come back as exactly 0.
+    """
+    live = masks > 0
+    if not live.any():
+        return np.zeros_like(returns)
+    mean = returns[live].mean()
+    std = returns[live].std()
+    return np.where(live, (returns - mean) / (std + 1e-8), 0.0).astype(np.float32)
+
+
 def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print("training on:", device, flush=True)
@@ -114,8 +130,7 @@ def main():
         episode_rewards = rewards_arr.sum(axis=0)  # (N,) total return per env this update
         reward_history.extend(episode_rewards.tolist())
 
-        returns = compute_returns(rewards_arr, GAMMA)
-        returns = (returns - returns.mean()) / (returns.std() + 1e-8)
+        returns = normalise_returns(compute_returns(rewards_arr, GAMMA), masks_arr)
         returns_t = torch.from_numpy(returns).to(device)
         masks_t = torch.from_numpy(masks_arr).to(device)
 
