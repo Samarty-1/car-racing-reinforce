@@ -1,0 +1,823 @@
+{
+  "checkpoint": "checkpoint.pt",
+  "mode": "greedy",
+  "first_seed": 0,
+  "frame_skip": 4,
+  "summary": {
+    "episodes": 100,
+    "mean": -44.36111659433932,
+    "std": 41.21479000767576,
+    "ci95_low": -52.43921543584377,
+    "ci95_high": -36.28301775283487,
+    "median": -63.23505154639218,
+    "min": -75.30000000000042,
+    "max": 75.88725099601672,
+    "frac_score_900_plus": 0.0,
+    "laps_finished": 0,
+    "hit_time_limit": 0,
+    "left_playfield": 100,
+    "mean_tiles_visited_frac": 0.08890588340566082
+  },
+  "per_episode": [
+    {
+      "seed": 0,
+      "score": -72.50407523511015,
+      "frames": 353,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06269592476489028
+    },
+    {
+      "seed": 1,
+      "score": -59.136363636364024,
+      "frames": 356,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07636363636363637
+    },
+    {
+      "seed": 2,
+      "score": -72.61343283582129,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.0626865671641791
+    },
+    {
+      "seed": 3,
+      "score": -61.49926199262037,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07380073800738007
+    },
+    {
+      "seed": 4,
+      "score": -58.93636363636402,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07636363636363637
+    },
+    {
+      "seed": 5,
+      "score": -74.40972644376944,
+      "frames": 353,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.060790273556231005
+    },
+    {
+      "seed": 6,
+      "score": 29.129577464789435,
+      "frames": 259,
+      "decisions": 65,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.15492957746478872
+    },
+    {
+      "seed": 7,
+      "score": -72.50407523511015,
+      "frames": 353,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06269592476489028
+    },
+    {
+      "seed": 8,
+      "score": 75.88725099601672,
+      "frames": 274,
+      "decisions": 69,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.20318725099601595
+    },
+    {
+      "seed": 9,
+      "score": -61.715789473684644,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07368421052631578
+    },
+    {
+      "seed": 10,
+      "score": -65.53255813953533,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06976744186046512
+    },
+    {
+      "seed": 11,
+      "score": 58.62818532818625,
+      "frames": 268,
+      "decisions": 67,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.18532818532818532
+    },
+    {
+      "seed": 12,
+      "score": -66.09306930693114,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06930693069306931
+    },
+    {
+      "seed": 13,
+      "score": -60.66690391459119,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07473309608540925
+    },
+    {
+      "seed": 14,
+      "score": -64.21355932203436,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.0711864406779661
+    },
+    {
+      "seed": 15,
+      "score": -66.44754098360696,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06885245901639345
+    },
+    {
+      "seed": 16,
+      "score": 5.684192439863224,
+      "frames": 250,
+      "decisions": 63,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.13058419243986255
+    },
+    {
+      "seed": 17,
+      "score": -68.85481727574793,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.0664451827242525
+    },
+    {
+      "seed": 18,
+      "score": -68.20734824281193,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.0670926517571885
+    },
+    {
+      "seed": 19,
+      "score": -75.30000000000042,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06
+    },
+    {
+      "seed": 20,
+      "score": -71.09743589743633,
+      "frames": 353,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.0641025641025641
+    },
+    {
+      "seed": 21,
+      "score": -73.16982248520753,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.0621301775147929
+    },
+    {
+      "seed": 22,
+      "score": 0.1822629969425975,
+      "frames": 253,
+      "decisions": 64,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.12538226299694188
+    },
+    {
+      "seed": 23,
+      "score": -64.35405405405447,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07094594594594594
+    },
+    {
+      "seed": 24,
+      "score": -66.77254901960825,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06862745098039216
+    },
+    {
+      "seed": 25,
+      "score": -66.57254901960825,
+      "frames": 353,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06862745098039216
+    },
+    {
+      "seed": 26,
+      "score": -58.47692307692336,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07692307692307693
+    },
+    {
+      "seed": 27,
+      "score": -70.36493506493551,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06493506493506493
+    },
+    {
+      "seed": 28,
+      "score": -66.32105263157936,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06907894736842106
+    },
+    {
+      "seed": 29,
+      "score": 15.693470790378711,
+      "frames": 253,
+      "decisions": 64,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.140893470790378
+    },
+    {
+      "seed": 30,
+      "score": -71.30223642172567,
+      "frames": 353,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06389776357827476
+    },
+    {
+      "seed": 31,
+      "score": -0.11240875912346837,
+      "frames": 243,
+      "decisions": 61,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.12408759124087591
+    },
+    {
+      "seed": 32,
+      "score": -64.21355932203436,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.0711864406779661
+    },
+    {
+      "seed": 33,
+      "score": -61.195053003534035,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07420494699646643
+    },
+    {
+      "seed": 34,
+      "score": -73.1881987577644,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.062111801242236024
+    },
+    {
+      "seed": 35,
+      "score": -67.95993265993306,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06734006734006734
+    },
+    {
+      "seed": 36,
+      "score": -10.106896551723494,
+      "frames": 240,
+      "decisions": 60,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.11379310344827587
+    },
+    {
+      "seed": 37,
+      "score": -58.376923076923376,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07692307692307693
+    },
+    {
+      "seed": 38,
+      "score": -65.63255813953532,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06976744186046512
+    },
+    {
+      "seed": 39,
+      "score": -75.05903614457876,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.060240963855421686
+    },
+    {
+      "seed": 40,
+      "score": -72.52574850299443,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06287425149700598
+    },
+    {
+      "seed": 41,
+      "score": -66.67254901960825,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06862745098039216
+    },
+    {
+      "seed": 42,
+      "score": 16.242756183746167,
+      "frames": 252,
+      "decisions": 63,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.1413427561837456
+    },
+    {
+      "seed": 43,
+      "score": -66.09306930693114,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06930693069306931
+    },
+    {
+      "seed": 44,
+      "score": -75.12808022922675,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06017191977077364
+    },
+    {
+      "seed": 45,
+      "score": -68.42101910828066,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06687898089171974
+    },
+    {
+      "seed": 46,
+      "score": -66.77254901960825,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06862745098039216
+    },
+    {
+      "seed": 47,
+      "score": 21.05767918088813,
+      "frames": 258,
+      "decisions": 65,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.14675767918088736
+    },
+    {
+      "seed": 48,
+      "score": -58.65766423357699,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07664233576642336
+    },
+    {
+      "seed": 49,
+      "score": -71.17981651376189,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06422018348623854
+    },
+    {
+      "seed": 50,
+      "score": -63.23505154639218,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07216494845360824
+    },
+    {
+      "seed": 51,
+      "score": -64.69292929292969,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.0707070707070707
+    },
+    {
+      "seed": 52,
+      "score": -65.4000000000004,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07
+    },
+    {
+      "seed": 53,
+      "score": 34.71428571428646,
+      "frames": 261,
+      "decisions": 66,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.16071428571428573
+    },
+    {
+      "seed": 54,
+      "score": -64.45405405405447,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07094594594594594
+    },
+    {
+      "seed": 55,
+      "score": -67.7758842443734,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06752411575562701
+    },
+    {
+      "seed": 56,
+      "score": -69.87943925233685,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06542056074766354
+    },
+    {
+      "seed": 57,
+      "score": -62.98620689655215,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07241379310344828
+    },
+    {
+      "seed": 58,
+      "score": 35.01202749140967,
+      "frames": 266,
+      "decisions": 67,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.16151202749140894
+    },
+    {
+      "seed": 59,
+      "score": -63.72764505119495,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07167235494880546
+    },
+    {
+      "seed": 60,
+      "score": -66.44754098360696,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06885245901639345
+    },
+    {
+      "seed": 61,
+      "score": -70.68387096774234,
+      "frames": 353,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06451612903225806
+    },
+    {
+      "seed": 62,
+      "score": 27.784671532847426,
+      "frames": 256,
+      "decisions": 64,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.15328467153284672
+    },
+    {
+      "seed": 63,
+      "score": -57.333085501858974,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07806691449814127
+    },
+    {
+      "seed": 64,
+      "score": -60.56690391459119,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07473309608540925
+    },
+    {
+      "seed": 65,
+      "score": -59.58772563176933,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07581227436823104
+    },
+    {
+      "seed": 66,
+      "score": -60.66690391459119,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07473309608540925
+    },
+    {
+      "seed": 67,
+      "score": -67.99230769230812,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.0673076923076923
+    },
+    {
+      "seed": 68,
+      "score": -68.19230769230813,
+      "frames": 356,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.0673076923076923
+    },
+    {
+      "seed": 69,
+      "score": -67.85993265993307,
+      "frames": 353,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06734006734006734
+    },
+    {
+      "seed": 70,
+      "score": -48.523140495867324,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.08677685950413223
+    },
+    {
+      "seed": 71,
+      "score": -66.99609120521217,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06840390879478828
+    },
+    {
+      "seed": 72,
+      "score": 41.85878136200793,
+      "frames": 267,
+      "decisions": 67,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.16845878136200718
+    },
+    {
+      "seed": 73,
+      "score": 63.01123595505686,
+      "frames": 281,
+      "decisions": 71,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.19101123595505617
+    },
+    {
+      "seed": 74,
+      "score": -62.38333333333378,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07291666666666667
+    },
+    {
+      "seed": 75,
+      "score": -64.93020134228232,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07046979865771812
+    },
+    {
+      "seed": 76,
+      "score": -64.52862190812766,
+      "frames": 353,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.0706713780918728
+    },
+    {
+      "seed": 77,
+      "score": -61.61578947368464,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07368421052631578
+    },
+    {
+      "seed": 78,
+      "score": -73.3881987577644,
+      "frames": 356,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.062111801242236024
+    },
+    {
+      "seed": 79,
+      "score": 47.85773195876362,
+      "frames": 275,
+      "decisions": 69,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.17525773195876287
+    },
+    {
+      "seed": 80,
+      "score": -60.56690391459119,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07473309608540925
+    },
+    {
+      "seed": 81,
+      "score": -59.48772563176933,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07581227436823104
+    },
+    {
+      "seed": 82,
+      "score": -53.58793774319061,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.08171206225680934
+    },
+    {
+      "seed": 83,
+      "score": 47.84545454545531,
+      "frames": 268,
+      "decisions": 67,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.17454545454545456
+    },
+    {
+      "seed": 84,
+      "score": -63.23505154639218,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07216494845360824
+    },
+    {
+      "seed": 85,
+      "score": 17.522097378277834,
+      "frames": 249,
+      "decisions": 63,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.14232209737827714
+    },
+    {
+      "seed": 86,
+      "score": -59.313043478261235,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07608695652173914
+    },
+    {
+      "seed": 87,
+      "score": -57.23308550185897,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07806691449814127
+    },
+    {
+      "seed": 88,
+      "score": -57.23308550185897,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07806691449814127
+    },
+    {
+      "seed": 89,
+      "score": -8.405960264900017,
+      "frames": 244,
+      "decisions": 61,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.11589403973509933
+    },
+    {
+      "seed": 90,
+      "score": -64.35405405405447,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07094594594594594
+    },
+    {
+      "seed": 91,
+      "score": -63.13505154639218,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07216494845360824
+    },
+    {
+      "seed": 92,
+      "score": -62.63564013840872,
+      "frames": 354,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.0726643598615917
+    },
+    {
+      "seed": 93,
+      "score": -68.94430379746879,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06645569620253164
+    },
+    {
+      "seed": 94,
+      "score": 32.29473684210609,
+      "frames": 257,
+      "decisions": 65,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.15789473684210525
+    },
+    {
+      "seed": 95,
+      "score": 43.26856187291065,
+      "frames": 274,
+      "decisions": 69,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.1705685618729097
+    },
+    {
+      "seed": 96,
+      "score": 55.298591549296674,
+      "frames": 279,
+      "decisions": 70,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.18309859154929578
+    },
+    {
+      "seed": 97,
+      "score": -67.65806451612944,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.06774193548387097
+    },
+    {
+      "seed": 98,
+      "score": -60.93191489361747,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07446808510638298
+    },
+    {
+      "seed": 99,
+      "score": -56.15471698113218,
+      "frames": 355,
+      "decisions": 89,
+      "outcome": "left_playfield",
+      "tiles_visited_frac": 0.07924528301886792
+    }
+  ]
+}

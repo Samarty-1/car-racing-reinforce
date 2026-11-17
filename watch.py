@@ -4,9 +4,9 @@ import torch
 import gymnasium as gym
 
 from policy import PolicyNet
-from train import to_tensor, FRAME_SKIP
+from eval import to_tensor, FRAME_SKIP
 
-CHECKPOINT_PATH = "checkpoint.pt"
+CHECKPOINT_PATH = "checkpoint_gpu.pt"
 
 
 def main():

@@ -1,8 +1,11 @@
 """
 Phase 2: fine-tune an already-good CarRacing bot to drive faster, not just
-finish. Starts from checkpoint_gpu.pt (the bot that passed the 900-point
-bar) and keeps training under the speed-bonus reward from reward_wrapper.py.
-Saves to separate files so the original phase-1 bot is never overwritten.
+finish. Starts from checkpoint_gpu.pt and keeps training under the speed-bonus
+reward from reward_wrapper.py. Saves to separate files so the original phase-1
+bot is never overwritten.
+
+Experimental and not run to completion: no phase-2 checkpoint is shipped, and
+the phase-1 bot it starts from does not clear the 900-point bar (see README).
 """
 import os
 import json
@@ -13,10 +16,15 @@ import gymnasium as gym
 
 from policy import PolicyNet
 from reward_wrapper import CarRacingSpeedBonus
+from train_gpu import compute_returns, normalise_returns, to_tensor_batch
 
-with open("phase2_config.json") as f:
-    _cfg = json.load(f)
-PAR_DECISIONS = _cfg["par_decisions"]
+# "Par" is the number of decisions a finished lap is compared against. The
+# environment's own limit is 250 decisions (1000 frames), so any finished lap
+# takes fewer than that. Override with phase2_config.json: {"par_decisions": N}.
+PAR_DECISIONS = 230
+if os.path.exists("phase2_config.json"):
+    with open("phase2_config.json") as f:
+        PAR_DECISIONS = json.load(f)["par_decisions"]
 
 NUM_ENVS = 10
 NUM_UPDATES = 300         # ~3000 episodes of fine-tuning
@@ -32,11 +40,6 @@ BASE_CHECKPOINT = "checkpoint_gpu.pt"
 
 def make_env():
     return CarRacingSpeedBonus(gym.make("CarRacing-v3", continuous=False), PAR_DECISIONS)
-
-
-def to_tensor_batch(obs_batch, device):
-    t = torch.from_numpy(obs_batch.copy()).float() / 255.0
-    return t.permute(0, 3, 1, 2).to(device)
 
 
 def run_rollout(envs, policy, device, num_envs):
@@ -65,16 +68,6 @@ def run_rollout(envs, policy, device, num_envs):
     return log_probs, entropies, rewards, masks
 
 
-def compute_returns(rewards, gamma):
-    T, N = rewards.shape
-    returns = np.zeros((T, N), dtype=np.float32)
-    running = np.zeros(N, dtype=np.float32)
-    for t in reversed(range(T)):
-        running = rewards[t] + gamma * running
-        returns[t] = running
-    return returns
-
-
 def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print("phase 2 training on:", device, "| par decisions:", PAR_DECISIONS, flush=True)
@@ -90,7 +83,7 @@ def main():
     else:
         policy.load_state_dict(torch.load(BASE_CHECKPOINT, map_location=device))
         reward_history = []
-        print("starting phase 2 from the passing phase-1 checkpoint", flush=True)
+        print("starting phase 2 from the phase-1 checkpoint", flush=True)
 
     optimizer = torch.optim.Adam(policy.parameters(), lr=LEARNING_RATE)
     start = time.time()
@@ -103,8 +96,7 @@ def main():
         episode_rewards = rewards_arr.sum(axis=0)
         reward_history.extend(episode_rewards.tolist())
 
-        returns = compute_returns(rewards_arr, GAMMA)
-        returns = (returns - returns.mean()) / (returns.std() + 1e-8)
+        returns = normalise_returns(compute_returns(rewards_arr, GAMMA), masks_arr)
         returns_t = torch.from_numpy(returns).to(device)
         masks_t = torch.from_numpy(masks_arr).to(device)
 
